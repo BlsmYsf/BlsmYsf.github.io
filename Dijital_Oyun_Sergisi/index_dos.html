@@ -206,6 +206,21 @@
                                 <button class="btn btn-pill btn-primary" type="button">ANASAYFA</button>
                             </a>
                         </p>
+
+                        <script>
+                            yonlenecek_adresler = "https://blsmysf.github.io/Dijital_Oyun_Sergisi/elma_v4.3.html/1,https://blsmysf.github.io/Dijital_Oyun_Sergisi/kart_v8.1.html/2,https://blsmysf.github.io/Dijital_Oyun_Sergisi/kelime_v3.1.html/3";
+                            adresler = yonlenecek_adresler.split(",");
+                            function rast() {
+                                adres = adresler[Math.floor(Math.random()*adresler.length)];
+                            window.location.replace(adres); 
+                            }
+                            
+                            </script>
+                        <p>
+                            
+                                <button class="btn btn-pill btn-primary" type="button" onclick="rast">ANASAYFA</button>
+
+                        </p>
                     </div>
                 </div>
             </div>
