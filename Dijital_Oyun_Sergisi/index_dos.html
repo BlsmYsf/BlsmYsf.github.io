@@ -79,14 +79,14 @@
     <!-- NOTICE: You can use the _analytics.html partial to include production code specific code & trackers -->
 
     <script>
-        yonlenecek_adresler = "https://blsmysf.github.io/Dijital_Oyun_Sergisi/elma_v4.3.html,https://blsmysf.github.io/Dijital_Oyun_Sergisi/kart_v8.1.html,https://blsmysf.github.io/Dijital_Oyun_Sergisi/kelime_v3.1.html";
+        yonlenecek_adresler = "https://blsmysf.github.io/Dijital_Oyun_Sergisi/bocek_araba_v2.1.html,https://blsmysf.github.io/Dijital_Oyun_Sergisi/elma_v4.3.html,https://blsmysf.github.io/Dijital_Oyun_Sergisi/hafiza_v6.1.html,https://blsmysf.github.io/Dijital_Oyun_Sergisi/kart_v8.1.html,https://blsmysf.github.io/Dijital_Oyun_Sergisi/kedi_fare_v2.3.html,https://blsmysf.github.io/Dijital_Oyun_Sergisi/kedi_tiklama_v1.1.html,https://blsmysf.github.io/Dijital_Oyun_Sergisi/kelime_v3.1.html,https://blsmysf.github.io/Dijital_Oyun_Sergisi/sayi_tahmin_mod_2.1.html,https://blsmysf.github.io/Dijital_Oyun_Sergisi/sayi_tahmin_v1.4.html";
         adresler = yonlenecek_adresler.split(",");
         function rast() {
-            adres = adresler[Math.floor(Math.random()*adresler.length)];
-        window.location.replace(adres); 
+            adres = adresler[Math.floor(Math.random() * adresler.length)];
+            window.location.replace(adres);
         }
-        
-        </script>
+
+    </script>
 
 
 </head>
@@ -145,7 +145,10 @@
 
                         <div class="row justify-content-center">
                             <div class="col-12 col-md-10">
-
+                                <p>
+                                    <button class="btn btn-pill btn-primary" type="button" onclick="rast();">Rastgele
+                                        bir oyun OYNA</button>
+                                </p>
                                 <div class="alert alert-info shadow-soft" role="alert">
                                     <span class="alert-inner--text">1. Böcek Araba <a href="bocek_araba_v1.2.html"
                                             class="alert-link">Oyunu</a>. Oynamak için <a
@@ -216,13 +219,6 @@
                             <a href="/index.html">
                                 <button class="btn btn-pill btn-primary" type="button">ANASAYFA</button>
                             </a>
-                        </p>
-
-
-                        <p>
-                            
-                                <button class="btn btn-pill btn-primary" type="button" onclick="rast();">OYNA</button>
-
                         </p>
                     </div>
                 </div>
